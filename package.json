@@ -9,8 +9,8 @@
     "test": "start-server-and-test test:setup http-get://localhost:4444/status test:run",
     "all-stations-on-chrome-on-test": "concurrently 'http-server src/ -p 1337 -s' cucumber-js --require-module babel-core/register --require test/support --require features/step-definitions --format node_modules/cucumber-pretty 'sh browserstack.sh chrome test google.feature' --success first --kill-others"
   },
-  "repository": "git@github.com:bbc/sounds-web.git",
-  "author": "BBC SOUNDS Test Team",
+  "repository": "git@github.com:pratyush23/nightwatch-api-browserstack.git",
+  "author": "Pratyush",
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",

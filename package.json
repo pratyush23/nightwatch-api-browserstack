@@ -7,7 +7,7 @@
     "test:setup": "node test/server.js",
     "test:run": "cucumber-js --require test/support --require features/step-definitions --format node_modules/cucumber-pretty",
     "test": "start-server-and-test test:setup http-get://localhost:4444/status test:run",
-    "all-stations-on-chrome-on-test": "concurrently 'http-server src/ -p 1337 -s' cucumber-js --require-module babel-core/register --require test/support --require features/step-definitions --format node_modules/cucumber-pretty 'sh browserstack.sh chrome test my_sounds.feature' --success first --kill-others"
+    "all-stations-on-chrome-on-test": "concurrently 'http-server src/ -p 1337 -s' cucumber-js --require-module babel-core/register --require test/support --require features/step-definitions --format node_modules/cucumber-pretty 'sh browserstack.sh chrome test google.feature' --success first --kill-others"
   },
   "repository": "git@github.com:bbc/sounds-web.git",
   "author": "BBC SOUNDS Test Team",

@@ -3,5 +3,5 @@ const { Given, Then, When } = require('cucumber');
 const Google = require('../pages/google.js');
 
 Given(/^I am on the Google page$/, () => {
-  return client.url(google.url());
+  return client.url(Google.url());
 });

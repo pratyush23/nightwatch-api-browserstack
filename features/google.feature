@@ -5,7 +5,7 @@ Feature: My Sounds
   So that I can see the relevant information for each item
 
   Background:
-    Given I am on the My Sounds page
+    Given I am on the Google page
 
   Scenario: Validate landing page of my Sounds
     Then the title is "BBC Sounds - My Sounds - Latest"
